@@ -1,25 +1,37 @@
 [
   {
-    "type": "voice-over-artist"
+    "type": "voice-over-artist",
+    "title": "Know Yourself",
+    "description": "Adventure Workbook Video Ads 12 Issue Series"
   },
   {
-    "type": "moderation"
+    "type": "moderator",
+    "title": "An Evening with Herbie Hancock"
 
   },
   {
-    "type": "stage-host"
+    "type": "moderator",
+    "title": "An Evening with Ta-Nehisi"
 
   },
   {
-    "type": "radio-producer"
+    "type": "stage-host",
+    "title": "San Jose Jazz Festival"
 
   },
   {
-    "type": "radio-host"
+    "type": "radio-producer",
+    "title": "KCSM"
 
   },
   {
-    "type": "journalism",
+    "type": "radio-host",
+    "title": "KCSM"
+
+  },
+  {
+    "type": "journalist",
+    "title": "Liner notes for ",
     "tags": ["Liner Notes"]
 
   }

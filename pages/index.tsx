@@ -29,16 +29,20 @@ const Home: NextPage = () => {
         acc.push(unslugify(cv.type))
       }
 
-      return acc
+      return acc.sort()
     }, [])
   }, [work])
 
-  console.log('t', types)
+  const workByType = React.useMemo(() => {
+    if(!types) return
+
+    console.log('work', work)
+
+  }, [types])
 
   return (
-    <div className="p-12">
-      <h1 className={'text-3xl sm:text-6xl'}>Greg Bridges</h1>
-      <div className={'flex-col'}>
+    <div className="p-12 bg-slate-100 min-h-screen">
+      <div className={'mt-24 flex-col'}>
         {types &&
           types.map((type) => (
             <button key={type} className={'flex text-3xl hover:text-rose-500 p-4'}>

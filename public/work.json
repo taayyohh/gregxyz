@@ -1,0 +1,26 @@
+[
+  {
+    "type": "voice-over-artist"
+  },
+  {
+    "type": "moderation"
+
+  },
+  {
+    "type": "stage-host"
+
+  },
+  {
+    "type": "radio-producer"
+
+  },
+  {
+    "type": "radio-host"
+
+  },
+  {
+    "type": "journalism",
+    "tags": ["Liner Notes"]
+
+  }
+]

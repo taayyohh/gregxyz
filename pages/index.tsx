@@ -53,7 +53,7 @@ const Home: NextPage = () => {
 
       return acc
     }, [])
-  }, [types])
+  }, [types, work])
 
   const [isOpen, setIsOpen] = React.useState(false)
   const variants = {
@@ -123,7 +123,7 @@ const Home: NextPage = () => {
                 >
                   {item?.image && (
                     <div className={'flex items-center justify-center p-4'}>
-                      <img src={item?.image} />
+                      <Image src={item?.image} />
                     </div>
                   )}
                   <div className={'text-2xl'}>{item?.title}</div>

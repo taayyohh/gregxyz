@@ -15,7 +15,7 @@ const Layout = ({ children }: Props) => {
 
   const signer = React.useMemo(() => {
     return data
-  }, [isLoading, isError, data])
+  }, [data])
 
   React.useEffect(() => {
     if (!!signer) {

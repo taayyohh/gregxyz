@@ -6,7 +6,7 @@ import workJSON from 'public/work.json'
 import { unslugify, slugify } from 'utils/helpers'
 import { useLayoutStore } from 'stores/useLayoutStore'
 import { HiMenu } from 'react-icons/hi'
-import { motion } from 'framer-motion'
+import { AnimatePresence, motion } from 'framer-motion'
 
 interface workProps {
   type: string
@@ -44,7 +44,7 @@ const Home: NextPage = () => {
   }, [work])
 
   /*  prepare work filter */
-  const [filter, setFilter] = React.useState<string>('Radio Host')
+  const [filter, setFilter] = React.useState<string>('Moderator')
   const workByType = React.useMemo<any | undefined>(() => {
     if (!types) return
 
@@ -108,24 +108,31 @@ const Home: NextPage = () => {
             Book Me
           </button>
         </motion.div>
-        {workByType && (
-          <div className="w-full flex flex-col sm:grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {workByType[filter]?.map((item: workProps) => (
-              <div
-                key={item.title}
-                className={`inline-flex flex-col self-start border bg-gray-200 border-box p-4 w-full rounded border-slate-300`}
-              >
-                {item?.image && (
+        <AnimatePresence exitBeforeEnter={true}>
+          {workByType && (
+            <motion.div
+              key={filter}
+              initial={{ opacity: 0, y: -5 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="w-full flex flex-col sm:grid grid-cols-1 lg:grid-cols-2 gap-12"
+            >
+              {workByType[filter]?.map((item: workProps) => (
+                <div
+                  key={item.title}
+                  className={`inline-flex flex-col self-start border bg-gray-200 border-box p-4 w-full rounded border-slate-300`}
+                >
+                  {item?.image && (
                     <div className={'flex items-center justify-center p-4'}>
                       <img src={item?.image} />
                     </div>
-                )}
-                <div className={'text-2xl'}>{item?.title}</div>
-                <div className={'text-md'}>{item?.description}</div>
-              </div>
-            ))}
-          </div>
-        )}
+                  )}
+                  <div className={'text-2xl'}>{item?.title}</div>
+                  <div className={'text-md'}>{item?.description}</div>
+                </div>
+              ))}
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </div>
   )

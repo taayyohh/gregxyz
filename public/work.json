@@ -7,34 +7,38 @@
   {
     "type": "moderator",
     "title": "Herbie Hancock: Possibilities: A Conversational Voyage with Herbie Hancock & Greg Bridges",
-    "date": "Saturday, November 1, 2014",
+    "date": "November 1, 2014",
     "image": "https://arweave.net/qnThpKmpCo2i8Bh-TxWGcApAvhh1I7OdTL1pNC21s9I"
-
   },
   {
     "type": "moderator",
-    "title": "An Evening with Ta-Nehisi"
-
+    "title": "An Evening with Ta-Nehisi",
+    "date": "October 28, 2015",
+    "youtube": "https://www.youtube.com/watch?v=QMmON9_Shns",
+    "image": "https://arweave.net/Zd2CdTsGbApJ0Xuzls3m07GJPoY7jwpI9W4W1jYCZA4"
+  },
+  {
+    "type": "moderator",
+    "title": "'The Beast Side: Living and Dying While Black in America' Hosted by Greg Bridges",
+    "date": "September 22, 2015",
+    "image": "https://arweave.net/bE0i1FYrUntVvVWva4g-iuSnJyQdwSu4Jg2qfI94OQo",
+    "description": "In The Interesting Narrative of the Life of Olaudah Equiano, first published in 1789, freedman Equiano chronicled his journey into and out of slavery. Ever since, African-Americans have documented the long economic, psychological, and cultural shadow of being imported like commodities to this country. Their works stretch from Booker T. Washington’s Up from Slavery to Richard Wright’s Black Boy and John Edgar Wideman’s Brothers and Keepers, to James Baldwin to Barack Obama’s Dreams From My Father and Ta-Nehisi Coates’ famous “Letter to My Son”and “Between the World and Me.”"
   },
   {
     "type": "stage-host",
     "title": "San Jose Jazz Festival"
-
   },
   {
     "type": "radio-producer",
     "title": "KCSM"
-
   },
   {
     "type": "radio-host",
     "title": "KCSM"
-
   },
   {
     "type": "journalist",
     "title": "Liner notes for ",
     "tags": ["Liner Notes"]
-
   }
 ]

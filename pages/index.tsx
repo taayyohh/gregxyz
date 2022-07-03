@@ -13,6 +13,7 @@ interface workProps {
   title: string
   description?: string
   date?: string
+  image?: string
 }
 
 const Home: NextPage = () => {
@@ -104,16 +105,21 @@ const Home: NextPage = () => {
               'bg-rose-600 hover:bg-rose-700 mt-4 w-full p-4 flex items-center justify-center text-white rounded'
             }
           >
-            Hire Me
+            Book Me
           </button>
         </motion.div>
         {workByType && (
-          <div className="w-full flex flex-col sm:grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-12">
+          <div className="w-full flex flex-col sm:grid grid-cols-1 lg:grid-cols-2 gap-12">
             {workByType[filter]?.map((item: workProps) => (
               <div
                 key={item.title}
                 className={`inline-flex flex-col self-start border bg-gray-200 border-box p-4 w-full rounded border-slate-300`}
               >
+                {item?.image && (
+                    <div className={'flex items-center justify-center p-4'}>
+                      <img src={item?.image} />
+                    </div>
+                )}
                 <div className={'text-2xl'}>{item?.title}</div>
                 <div className={'text-md'}>{item?.description}</div>
               </div>

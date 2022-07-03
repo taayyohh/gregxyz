@@ -123,7 +123,7 @@ const Home: NextPage = () => {
                 >
                   {item?.image && (
                     <div className={'flex items-center justify-center p-4'}>
-                      <Image src={item?.image} />
+                      <Image src={item?.image} alt={item?.title}/>
                     </div>
                   )}
                   <div className={'text-2xl'}>{item?.title}</div>

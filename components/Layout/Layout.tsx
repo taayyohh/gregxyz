@@ -26,19 +26,18 @@ const Layout = ({ children }: Props) => {
       }
     }
   }, [signer])
-  
-  const handleResize = () => {
-    setIsMobile(window.innerWidth <= 639)
-  }
+
   /* add mobile flag to layout store  */
   React.useEffect(() => {
     if (!!window) {
       window.addEventListener('resize', handleResize)
       setIsMobile(window.innerWidth <= 639)
     }
-  }, [handleResize, setIsMobile])
+  }, [])
 
-
+  const handleResize = () => {
+    setIsMobile(window.innerWidth <= 639)
+  }
 
   return (
     <div>

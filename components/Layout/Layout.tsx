@@ -31,12 +31,12 @@ const Layout = ({ children }: Props) => {
   React.useEffect(() => {
     if (!!window) {
       window.addEventListener('resize', handleResize)
-      setIsMobile(window.innerWidth <= 768)
+      setIsMobile(window.innerWidth <= 639)
     }
   }, [])
 
   const handleResize = () => {
-    setIsMobile(window.innerWidth <= 768)
+    setIsMobile(window.innerWidth <= 639)
   }
 
   return (

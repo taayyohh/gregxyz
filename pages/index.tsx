@@ -67,6 +67,7 @@ const Home: NextPage = () => {
             <div className="w-full flex flex-col sm:grid lg:grid-cols-2 xl:grid-cols-3 gap-12">
               {workByType[filter]?.map((item: workProps) => (
                   <div
+                      key={item.title}
                       className={
                         'inline-flex flex-col self-start border border-slate-600 border-box p-4 rounded-xl shadow'
                       }
